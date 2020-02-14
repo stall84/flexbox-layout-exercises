@@ -1,0 +1,25 @@
+/* Styling for chessboard.html */
+
+/* Thinking of using space between/around and just alternating rows of divs */
+
+/* Initially attempted to leave body element unstyled & started with a div named #board. However none of the color or styling was being displayed and I don't know why. Reverted back to body element being outermost container */
+body {
+    
+    display: flex;
+    line-height: 100vh;
+    flex-basis: 100vw;
+    background-color: #ffce9e;
+}
+
+#board {
+
+    display: flex;
+    
+}
+
+.box1 {
+
+    background-color: #d18b47;
+    width: 100px;
+    height: 100px;
+}
