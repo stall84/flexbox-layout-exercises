@@ -2,6 +2,7 @@
 
 
 header {
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -16,25 +17,88 @@ header {
     width: 100vw;
     height: 20vh;
     font-size: 55px;
-    text-align: center;
+    /*text-align: center;*/
     background-color: #99d0ff;
-    border: 10px solid black;
+    border: 4px solid black;
 }
 
 #header-top h1 {
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: Arial;
     font-weight: 50;
 }
 
 main {
+
     display: flex;
-    flex-direction: column;
+    /*switched this flex-direction to row and now the main content is forming colums .. why?*/
+    flex-direction: row;
 }
 
 #left-column {
 
+    width: 18vw;
+    background-color: #d1a4d3;
+    border: 4px solid black;
+
 }
 
 #left-column ul {
+
+    font-family: Arial;
+    font-size: 40px;
+    fon
     list-style-type: none;
+}
+
+#middle-column {
+
+    width: 62vw;
+    background-color: #fcd3d2;
+    border: 4px solid black;
+    text-align: center;
+
+}
+
+#right-column {
+    
+    width: 18vw;
+    background-color: #d1a4d3;
+    border: 4px solid black;
+}
+
+#right-column>h2 {
+
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#footer-row {
+
+    height: 25vh;
+    width: 100vw;
+    background-color: #99d0ff;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Had to use text-align: center on the h2 element specifically .. for what reason was align items/content on footer or footer-row not working? */
+#footer-row>h2 {
+
+    text-align: center;
+    font-family: Arial;
+    font-size: 55px;
+    font-weight: 50;
 }
