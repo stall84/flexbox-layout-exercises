@@ -8,18 +8,103 @@ body {
     display: flex;
     line-height: 100vh;
     flex-basis: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    
     background-color: #ffce9e;
 }
 
 #board {
 
     display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
     
+
 }
 
 .box1 {
 
     background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*commenting out the margin/width/height because it's a hack to this challenge.. 
+    but i can't figure out the flexbox method so that the squares will stretch with window*/
+    /*
+    margin-left: 100px;
     width: 100px;
     height: 100px;
+    */
+}
+
+.box2 {
+
+    background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    */
+}
+
+.box3 {
+
+    background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    */
+}
+
+.box4 {
+
+    background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    */
+}
+
+.box5 {
+
+    background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    */
+}
+
+.box6 {
+
+    background-color: #d18b47;
+    width: 17vw;
+    height: 27vh;
+    margin: 0 17vw 17vw 0;
+
+    /*
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    */
 }
