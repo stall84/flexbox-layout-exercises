@@ -3,7 +3,7 @@
 
 
 /* 2nd attempt will try to use a number of top to bottom rows that contain flexbox rows of alternating margin'd boxes*/
-
+/* 2nd attempt update: Will now try using full 8 box's per row and use background-color inherit in alternating odd/even nth-child styling for div/boxes*/
 
 
 
@@ -11,6 +11,8 @@
 
     background-color: #ffce9e;
     height: 100vh;
+    /* was able to use 'flex-grow:1' value on box selector styling to make the boxes fit 8 per row. But unsure how to get the extra board at bottom from showing, so will shrink the vh of the board container to make it work.*/
+    /* adding flew-grow: 1 to every row seems to have solved above comment problem, but leaving comments just in case this is the incorrect hack to issue*/
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -20,27 +22,105 @@
 #row1 {
 
     display: flex;
+    flex-grow: 1;
+}
+
+/* discovered using odd nth child styling from stack overflow post */
+
+#row1 div:nth-child(odd) {
+
+    /*background inherit was my idea tho :)*/
+    background-color: inherit;
+    
 }
 
 #row2 {
+
     display: flex;
+    flex-grow: 1;
+}
+
+#row2 div:nth-child(even) {
+
+    background-color: inherit;
 }
 
 #row3 {
+
     display: flex;
+    flex-grow: 1;
+}
+
+#row3 div:nth-child(odd) {
+
+    background-color: inherit;
 }
 
 #row4 {
+
     display: flex;
+    flex-grow: 1;
+}
+
+#row4 div:nth-child(even) {
+
+    background-color: inherit;
+}
+
+#row5 {
+
+    display: flex;
+    flex-grow: 1;
+}
+
+#row5 div:nth-child(odd) {
+
+    background-color: inherit;
+}
+
+#row6 {
+
+    display: flex;
+    flex-grow: 1;
+}
+
+#row6 div:nth-child(even) {
+
+    background-color: inherit;
+}
+
+#row7 {
+
+    display: flex;
+    flex-grow: 1;
+}
+
+#row7 div:nth-child(odd) {
+
+    background-color: inherit;
+}
+
+#row8 {
+
+    display: flex;
+    flex-grow: 1;
+}
+
+#row8 div:nth-child(even) {
+
+    background-color: inherit;
 }
 
 .box {
-
-    width: 10vw;
-    height: 10vh;
+    
+    /*adding flex-grow to boxes allowed them to stretch fully to full width of page*/
+    flex-grow: 1;
+    /*tinkered with width&height to get them as close as possible to filling whole board with near-square shape*/
+    width: 12vw;
+    height: 12vh;
     background-color: #d18b47;
-    margin: 5px;
-
+    /* Initially used margin to help the boxes 'breathe' before correct flex styling was applied..*/
+    
 }
 
 
