@@ -1,110 +1,46 @@
 /* Styling for chessboard.html */
 
-/* Thinking of using space between/around and just alternating rows of divs */
 
-/* Initially attempted to leave body element unstyled & started with a div named #board. However none of the color or styling was being displayed and I don't know why. Reverted back to body element being outermost container */
-body {
-    
-    display: flex;
-    line-height: 100vh;
-    flex-basis: 100vw;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    background-color: #ffce9e;
-}
+
+/* 2nd attempt will try to use a number of top to bottom rows that contain flexbox rows of alternating margin'd boxes*/
+
+
+
 
 #board {
 
+    background-color: #ffce9e;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
+    flex-direction: column;
     
-
 }
 
-.box1 {
+#row1 {
 
+    display: flex;
+}
+
+#row2 {
+    display: flex;
+}
+
+#row3 {
+    display: flex;
+}
+
+#row4 {
+    display: flex;
+}
+
+.box {
+
+    width: 10vw;
+    height: 10vh;
     background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
+    margin: 5px;
 
-    /*commenting out the margin/width/height because it's a hack to this challenge.. 
-    but i can't figure out the flexbox method so that the squares will stretch with window*/
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
 }
 
-.box2 {
 
-    background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
-
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
-}
-
-.box3 {
-
-    background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
-
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
-}
-
-.box4 {
-
-    background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
-
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
-}
-
-.box5 {
-
-    background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
-
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
-}
-
-.box6 {
-
-    background-color: #d18b47;
-    width: 17vw;
-    height: 27vh;
-    margin: 0 17vw 17vw 0;
-
-    /*
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    */
-}
